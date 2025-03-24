@@ -1,7 +1,7 @@
 #define SDL_MAIN_HANDLED  
 #include <SDL2/SDL.h>
 #include <iostream>
-#include "VEGA16.h"  
+#include "VEGA1.h"  
 
 int main(int argc, char* argv[]) {
     VEGA16 engine;
