@@ -17,7 +17,7 @@ WINDOWS
 5. Now install SDL2, really simple as well, just `pacman -S mingw-w64-x86_64-SDL2`
 6. Now clone the repository by doing `git clone github.com/nebulatarxz/vega16`
 7. CD into the folder (capitan obvious again) by doing `cd vega16`
-8. If you want to compile the engine with the game do `g++ main.cpp VEGA1.cpp -o vega16 -I/mingw64/include -Dmain=SDL_main -L/mingw64/lib -lmingw32 -lSDL2main -lSDL2 -static-libgcc -static-libstdc++ -mconsole -Wl,-subsystem,console`, otherwise do `g++ main.cpp -o vega16 -I/mingw64/include -Dmain=SDL_main -L/mingw64/lib -lmingw32 -lSDL2main -lSDL2 -static-libgcc -static-libstdc++ -mconsole -Wl,-subsystem,console`
+8. If you want to compile the engine do `g++ main.cpp VEGA1.cpp -o vega16 -I/mingw64/include -Dmain=SDL_main -L/mingw64/lib -lmingw32 -lSDL2main -lSDL2 -static-libgcc -static-libstdc++ -mconsole -Wl,-subsystem,console`,
 9. And run `./vega16`
 
 ARCH
@@ -25,7 +25,8 @@ ARCH
 1. Type in this command 'sudo pacman -S `sdl2 base-devel`
 2. Clone the repository by doing `git clone github.com/nebulatarxz/vega16`
 3. CD into the folder (capitan obvious arch edition) by doing `cd vega16`
-4. If you want to compile the engine with the game do `g++ main.cpp VEGA1.cpp -o vega16 -lSDL2main -lSDL2 -static-libgcc -static-libstdc++ -mconsole -Wl,-subsystem,console`, otherwise do `g++ main.cpp -o vega16  -lSDL2main -lSDL2 -static-libgcc -static-libstdc++ -mconsole -Wl,-subsystem,console`
+4. If you want to compile the engine do `g++ main.cpp VEGA1.cpp -o vega16 -lSDL2main -lSDL2 -static-libgcc -static-libstdc++ -mconsole -Wl,-subsystem,console`
 5. And run `./vega16`
 
 More tutorials coming soon, or you can just figure out how to install g++ and sdl2 on your OS, just google it
+BTW, if you want to modify the game just modify the VEGA1.cpp.
