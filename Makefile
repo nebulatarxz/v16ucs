@@ -21,10 +21,10 @@ OBJECTS = $(patsubst $(SRCDIR)/%.cpp, $(OBJDIR)/%.o, $(SOURCES))
 # Include directories and libraries
 ifeq ($(OS), Windows_NT)
     INCLUDES = -I/mingw64/include
-    LIBS = -L/mingw64/lib -lmingw32 -lSDL2main -lSDL2 -static-libgcc -static-libstdc++
+    LIBS = -L/mingw64/lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf -static-libgcc -static-libstdc++
 else
     INCLUDES =
-    LIBS = -lSDL2main -lSDL2 -static-libgcc -static-libstdc++
+    LIBS = -lSDL2main -lSDL2 -lSDL2_ttf -static-libgcc -static-libstdc++
 endif
 
 # Create directories if they don't exist
