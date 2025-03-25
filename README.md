@@ -34,13 +34,13 @@ OR
 
 ARCH
 
-1. Type in this command 'sudo pacman -S `sdl2 sd2_ttf base-devel`
+1. Type in this command 'sudo pacman -S `sdl2 sd2_ttf base-devel make`
 2. Clone the repository by doing `git clone github.com/nebulatarxz/vega16`
 3. CD into the folder (capitan obvious arch edition) by doing `cd vega16`
 4. If you want to compile the engine do `g++ main.cpp VEGA1.cpp -o vega16 -Dmain=SDL_main-lmingw32 -lSDL2main -lSDL2_ttf -lSDL2 -mconsole -Wl,-subsystem,console -fpermissive`
 5. And run `./vega16`
 
-1. Type in this command 'sudo pacman -S `sdl2 sd2_ttf base-devel`
+1. Type in this command `sudo pacman -S sdl2 sd2_ttf base-devel`
 2. Clone the repository by doing `git clone github.com/nebulatarxz/vega16`
 3. CD into the folder (capitan obvious arch edition) by doing `cd vega16`
 4. If you want to compile the engine do make
