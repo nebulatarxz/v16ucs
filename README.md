@@ -30,7 +30,7 @@ OR
 6. Now clone the repository by doing `git clone github.com/nebulatarxz/vega16`
 7. CD into the folder (capitan obvious again) by doing `cd vega16`
 8. If you want to compile the engine do `make`
-9. And run `./vega16`
+9. And run `./bin/vega16`
 
 ARCH
 
@@ -44,7 +44,7 @@ ARCH
 2. Clone the repository by doing `git clone github.com/nebulatarxz/vega16`
 3. CD into the folder (capitan obvious arch edition) by doing `cd vega16`
 4. If you want to compile the engine do make
-5. And run `./vega16`
+5. And run `./bin/vega16`
 
 More tutorials coming soon, or you can just figure out how to install g++ and sdl2 on your OS, just google it
 BTW, if you want to modify the game just modify the VEGA1.cpp.
