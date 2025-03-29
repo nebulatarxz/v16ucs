@@ -1,23 +1,23 @@
 CXX = g++
 
-CXXFLAGS = -std=c++17 -Wall -Wextra -O2
+CXXFLAGS = -std=c++11 -Wall -Wextra -O2 -fpermissive -mconsole -Wl,-subsystem,console
 
 SRCDIR = .
 OBJDIR = obj
 BINDIR = bin
 
-TARGET = $(BINDIR)/vega16
+TARGET = $(BINDIR)/UntitledCatShooter
 
-SOURCES = $(SRCDIR)/main.cpp $(SRCDIR)/VEGA1.cpp
+SOURCES = $(SRCDIR)/main.cpp $(SRCDIR)/UCS.cpp $(SRCDIR)/resource.o
 
-OBJECTS = $(patsubst $(SRCDIR)/%.cpp, $(OBJDIR)/%.o, $(SOURCES))
+OBJECTS = $(patsubst $(SRCDIR)/%.cpp, $(OBJDIR)/%.o, $(filter %.cpp, $(SOURCES)))
 
 ifeq ($(OS), Windows_NT)
-    INCLUDES = -I/mingw64/include
-    LIBS = -L/mingw64/lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf -static-libgcc -static-libstdc++
+    INCLUDES = -I/mingw64/include -I/mingw64/include/SDL2
+    LIBS = -L/mingw64/lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf -lSDL2_gfx -lSDL2_image -static-libgcc -static-libstdc++
 else
-    INCLUDES =
-    LIBS = -lSDL2main -lSDL2 -lSDL2_ttf -static-libgcc -static-libstdc++
+    INCLUDES = `sdl2-config --cflags`
+    LIBS = -lSDL2main -lSDL2 -lSDL2_ttf -lSDL2_gfx -lSDL2_image -static-libgcc -static-libstdc++
 endif
 
 $(shell mkdir -p $(OBJDIR) $(BINDIR))
