@@ -1,19 +1,22 @@
-#define SDL_MAIN_HANDLED
-#include <SDL2/SDL.h>
+// Version: 0.0.4
+// Credits:
+// @skyliuswastaken on Discord: Main Developer
+// @_na69_ on Discord: Engine Contributor
+// @traox_ on Discord: Engine Contributor & Main Designer
+
+#define SDL_MAIN_HANDLED#include "UCS.h"
+#include "UCS.h"
 #include <iostream>
-#include "UCS.h"
-#include "UCS.h"
 
 int main(int argc, char* argv[]) {
-    VEGA16 engine;
-    if (!engine.init()) return -1;
+    VEGA16 game;
 
-    while (engine.running) {
-        engine.handleEvents();
-        engine.update();
-        engine.render();
+    if (!game.init()) {
+        std::cerr << "Failed to initialize game!" << std::endl;
+        return -1;
     }
 
-    engine.clean();
+    game.run();
+
     return 0;
 }
