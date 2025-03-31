@@ -5,7 +5,8 @@
 // @traox_ on Discord: Engine Contributor & Main Designer
 
 #ifndef UCS_H
-#define UCS_H#include <SDL2/SDL.h>
+#define UCS_H
+#include <SDL2/SDL.h>
 
 #include <SDL2/SDL_ttf.h>
 
