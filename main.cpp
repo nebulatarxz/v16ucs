@@ -4,7 +4,7 @@
 // @_na69_ on Discord: Engine Contributor
 // @traox_ on Discord: Engine Contributor & Main Designer
 
-#define SDL_MAIN_HANDLED#include "UCS.h"
+#define SDL_MAIN_HANDLED
 #include "UCS.h"
 #include <iostream>
 
