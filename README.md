@@ -13,7 +13,7 @@ If you're here, you probably want to download and play the game. To do that you 
 ## Compilation Guide
 
 > [!CAUTION]
-> **Note:** Linux users may encounter occasional bugs.
+> **Note:** Linux IS no longer supported, the development team really tried but none of us use Linux so we cannot test it, you're on your own, the only Linux support that will be kept is the Arch Linux tutorial.
 
 ### Windows (MSYS2)
 1. Download and install [MSYS2](https://www.msys2.org/).
